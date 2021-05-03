@@ -78,6 +78,9 @@ function registerValidate() {
     }else{
 		return true;
 	}
+
+  
+
 }
 
 form.addEventListener('blur', (event) => {

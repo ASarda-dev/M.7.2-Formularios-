@@ -17,7 +17,9 @@
 
 <body>
     <header>
+    
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          
             <a class="navbar-brand" href="#">
                 <h2>La Cocteleria creativa</h2>
             </a>
@@ -34,20 +36,40 @@
                 </div>
             </div>
         </nav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-md navbar-light bg-light d-flex justify-content-end ">
+            <div class="col">
 
-            <!-- <a class="navbar-brand" href="#">Log in</a> -->
-            <!-- Button to trigger modal -->
-            <button class="btn btn-warning btn-lg w-100" data-toggle="modal" data-target="#modalForm">
-                Registro
-            </button>
-            <!-- TODO: corregit donde va el formulario y crear otro log in -->
-            <button class="btn btn-dark mt-1 btn-lg w-100" data-toggle="modal" data-target="#modalForm">
-                Acceder
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="modalForm" role="dialog">
+                <button class="btn btn-warning m-2 " data-toggle="modal" data-target="#modalForm"> Registro
+                    <i class="fas fa-sign-in-alt"></i>
+                </button>
+                <!-- TODO: corregit donde va el formulario y crear otro log in -->
+                <!-- <button class="btn btn-primary m-2 " data-toggle="modal" data-target="#modalLogin">
+                    Acceder
+                </button> -->
+            </div>
+                
+            
+         
+            <!-- Modal login -->
+            <!-- <div class="modal" tabindex="-1" id="modalLogin">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Acceder a la parte de socios</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Acceder</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- Modal Registro -->
+            <div class="modal fade " id="modalForm" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <!-- Modal Header -->
@@ -62,7 +84,7 @@
                         <!-- Modal Body -->
                         <div class="modal-body">
                             <p class="statusMsg"></p>
-                            <form class="" method="" action="registrado.html" id="myFormId"
+                            <form class="" method="" action="" id="myFormId"
                                 onsubmit="return registerValidate()" name="myForm">
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
@@ -142,8 +164,84 @@
         </nav>
 
     </header>
-
-
+    <!-- entrada -->
+<div class="container-fluid text-center mb-4 bg-info">
+    <div class="row ">
+        <div class="col">
+           <h1 class="">Quieres sorprender a tus invitados ?</h1>
+        <p class="Co">Descubre nuestras recetas para que las puedas hacer en casa </p>
+        <button class="btn btn-lg bg-warning border-dark m-2">Descubrir</button>  
+        </div>
+    </div>
+</div>
+    
+    <!-- Cocteles -->
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-4 text-center mb-4">
+                <div class="card m-auto " style="width: 18rem;">
+                    <img class="card-img-top border-" src="fotos/mule.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Nuestros mules</h5>
+                      <p class="card-text">Algunos de nuestros ejemplos para que los puedas realizar en casa.</p>
+                      <a href="#" class="btn btn-primary">Descubrir</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card m-auto " style="width: 18rem;">
+                    <img class="card-img-top border-" src="fotos/taikiki.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Nuestros Tikis</h5>
+                      <p class="card-text">Algunos de nuestros ejemplos para que los puedas realizar en casa.</p>
+                      <a href="#" class="btn btn-primary">Descubrir</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card m-auto " style="width: 18rem;">
+                    <img class="card-img-top border-" src="fotos/starmrtii.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Nuestros Martinis</h5>
+                      <p class="card-text">Algunos de nuestros ejemplos para que los puedas realizar en casa.</p>
+                      <a href="#" class="btn btn-primary">Descubrir</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card m-auto " style="width: 18rem;">
+                    <img class="card-img-top border" src="fotos/underrock.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Champagne cocktails</h5>
+                      <p class="card-text">Algunos de nuestros ejemplos para que los puedas realizar en casa.</p>
+                      <a href="#" class="btn btn-primary">Descubrir</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card m-auto " style="width: 18rem;">
+                    <img class="card-img-top border-" src="fotos/plata.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Aromaticos</h5>
+                      <p class="card-text">Algunos de nuestros ejemplos para que los puedas realizar en casa.</p>
+                      <a href="#" class="btn btn-primary">Descubrir</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="card m-auto " style="width: 18rem;">
+                    <img class="card-img-top border-" src="fotos/oro.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Margaritas</h5>
+                      <p class="card-text">Algunos de nuestros ejemplos para que los puedas realizar en casa.</p>
+                      <a href="#" class="btn btn-primary">Descubrir</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+       
+    </div>
+<!-- seccion -->
 
 
 
