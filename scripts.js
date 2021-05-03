@@ -79,9 +79,9 @@ function registerValidate() {
 		return true;
 	}
 
-  
 
 }
+
 
 form.addEventListener('blur', (event) => {
 	console.log(event);
