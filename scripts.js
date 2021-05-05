@@ -4,8 +4,8 @@ const form = document.getElementById('myFormId');
 function registerValidate() {
 	var acumErrores = 0;
 	form.classList.remove('is-invalid');
-	var inputEmail = document.getElementById('inputEmail');
 	var inputName = document.forms["myForm"]["inputName"];
+	var inputEmail = document.getElementById('inputEmail');
 	var inputPassword = document.forms["myForm"]["inputPassword"];
 	var inputConPassword = document.forms["myForm"]["inputConPassword"];
 	var inputProvince = document.forms["myForm"]["inputProvince"];
@@ -73,21 +73,44 @@ function registerValidate() {
 		acumErrores ++;
 	}
 
-    if (acumErrores > 0){
-        return false;
-    }else{
-		return true;
+    // if (acumErrores > 0){
+    //     return false;
+    // }
+	// else{
+	// 	return true;
+	// }
+    if (acumErrores < 0){
+		$("#modalLogin").modal("show");
+        return true;
+    }
+	else{
+		return false;
 	}
 
-
+	
+//    
 }
-
+// form.addEventListener('submit', registerValidate);
+// console.log(registerValidate);
 
 form.addEventListener('blur', (event) => {
-	console.log(event);
+	// console.log(event);
 	if(event.target.value!='') event.target.classList.remove('is-invalid');
     registerValidate();
+
 }, true);
+
+// $("#modalLogin").modal("show");
+
+// Aparecer el modal automaticamente
+// $(document).ready(function(){
+// 	setTimeout(function(){
+// 		$("#modalForm").modal("show");
+// 		setTimeout(function(){
+// 			$("#modalForm").modal("hide");
+// 		}, 3000);
+// 	},2000 );
+// });
 
 // const expresiones = {
 // 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo

@@ -1,0 +1,11 @@
+.portada{
+    height:35vh;
+    background: url(fotos/hieoportada.jpg);
+    object-fit: cover;
+    color: azure;
+    text-shadow: 2px 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -9,10 +9,14 @@
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+<!-- css -->
+<link rel="stylesheet" href="styles.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<!-- Jquery -->
+
+
+        <!-- Jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 
@@ -57,23 +61,42 @@
             
          
             <!-- Modal login -->
-            <!-- <div class="modal" tabindex="-1" id="modalLogin">
+            <div class="modal" tabindex="-1" id="modalLogin">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title">Acceder a la parte de socios</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">×</span>
+                                <span class="sr-only">Close</span>
+                            </button>
                         </div>
                         <div class="modal-body">
-                            <p>Modal body text goes here.</p>
+                            <p>Inserte sus datos</p>
+                            <form class="" method="" action="" id="formLogin"
+                                name="formLogin">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputNameLogin">Nombre</label>
+                                        <input type="text" name="inputNameLogin" class="form-control" id="inputNameLogin">
+                                        <div class="invalid-feedback" id="errorNameLogin"></div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmailLogin">Email</label>
+                                        <input type="text" name="inputEmailLogin" class="form-control" id="inputEmailLogin">
+                                        <div class="invalid-feedback" id="errorEmailLogin"></div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary">Acceder</button>
+                            <button type="button" class="btn btn-primary"data-bs-dismiss="modal" >Acceder</button>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <!-- Modal Registro -->
             <div class="modal fade " id="modalForm" role="dialog">
                 <div class="modal-dialog">
@@ -89,7 +112,7 @@
 
                         <!-- Modal Body -->
                         <div class="modal-body">
-                            <p class="statusMsg"></p>
+                            <!-- <p class="statusMsg"></p> -->
                             <form class="" method="" action="" id="myFormId"
                                 onsubmit="return registerValidate()" name="myForm">
                                 <div class="form-row">
@@ -170,11 +193,11 @@
 
     </header>
     <!-- entrada -->
-<div class="container-fluid text-center mb-4 bg-info">
+<div class="container-fluid text-center mb-4 bg-info portada">
     <div class="row ">
         <div class="col">
            <h1 class="">Quieres sorprender a tus invitados ?</h1>
-        <p class="Co">Descubre nuestras recetas para que las puedas hacer en casa </p>
+        <p class="">Descubre nuestras recetas para que las puedas hacer en casa </p>
         <button class="btn btn-lg btn-outline-warning border-dark m-2">Descubrir</button>  
         </div>
     </div>
@@ -184,7 +207,7 @@
     <div class="container-fluid">
         <div class="row ">
             <div class="col-md-4 text-center mb-4">
-                <div class="card m-auto " style="width: 18rem;">
+                <div class="card m-auto bg-light" style="width: 18rem;">
                     <img class="card-img-top border-" src="fotos/mule.jpeg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Nuestros mules</h5>
@@ -194,7 +217,7 @@
                   </div>
             </div>
             <div class="col-md-4 text-center mb-4">
-                <div class="card m-auto " style="width: 18rem;">
+                <div class="card m-auto  bg-light" style="width: 18rem;">
                     <img class="card-img-top border-" src="fotos/starmrtii.jpeg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Nuestros Martinis</h5>
@@ -204,7 +227,7 @@
                 </div>
             </div>
             <div class="col-md-4 text-center mb-4">
-                <div class="card m-auto " style="width: 18rem;">
+                <div class="card m-auto  bg-light" style="width: 18rem;">
                     <img class="card-img-top border-" src="fotos/taikiki.jpeg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Nuestros Tikis</h5>
@@ -214,7 +237,7 @@
                   </div>
             </div>
             <div class="col-md-4 text-center mb-4">
-                <div class="card m-auto " style="width: 18rem;">
+                <div class="card m-auto  bg-light" style="width: 18rem;">
                     <img class="card-img-top border" src="fotos/underrock.jpeg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Champagne cocktails</h5>
@@ -224,17 +247,17 @@
                   </div>
             </div>
             <div class="col-md-4 text-center mb-4">
-                <div class="card m-auto " style="width: 18rem;">
+                <div class="card m-auto  bg-light" style="width: 18rem;">
                     <img class="card-img-top border-" src="fotos/plata.jpeg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Aromaticos</h5>
+                      <h5 class="card-title">Aromáticos</h5>
                       <p class="card-text">Algunos de nuestros ejemplos para que los puedas realizar en casa.</p>
                       <a href="#" class="btn btn-primary">Descubrir</a>
                     </div>
                   </div>
             </div>
             <div class="col-md-4 text-center mb-4">
-                <div class="card m-auto " style="width: 18rem;">
+                <div class="card m-auto  bg-light" style="width: 18rem;">
                     <img class="card-img-top border-" src="fotos/oro.jpeg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Margaritas</h5>
@@ -253,6 +276,8 @@
 
 
     <!-- Optional JavaScript -->
+    <script src="scripts.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -264,7 +289,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 
-    <script src="scripts.js"></script>
 </body>
 
 </html>
